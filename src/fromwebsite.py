@@ -1,9 +1,31 @@
+import os
+import re
+import sys
+import time
 import requests
 import pandas as pd
+import concurrent.futures
 from bs4 import BeautifulSoup
-import time
-import sys
-import re
+from alive_progress import alive_bar
+from colorama import init, Fore, Style
+
+os.system('cls')
+
+# colors
+
+init(autoreset=True)
+red = Fore.RED + Style.BRIGHT
+green = Fore.GREEN + Style.BRIGHT
+yellow = Fore.YELLOW + Style.BRIGHT
+blue = Fore.BLUE + Style.BRIGHT
+magenta = Fore.MAGENTA + Style.BRIGHT
+cyan = Fore.CYAN + Style.BRIGHT
+white = Fore.WHITE + Style.BRIGHT
+
+try:
+    os.chdir(os.path.dirname(__file__))
+except:
+    pass
 
 ROOT_URL = 'http://accent.gmu.edu/'
 BROWSE_LANGUAGE_URL = 'browse_language.php?function=find&language={}'
@@ -19,12 +41,11 @@ def get_htmls(urls):
     htmls = []
     for url in urls:
         if DEBUG:
-            print('downloading from {}'.format(url))
+            print(f'  {white}> {magenta}downloading from {white}{url}')
         htmls.append(requests.get(url).text)
-        time.sleep(WAIT)
+        #time.sleep(WAIT)
 
     return(htmls)
-
 
 def build_search_urls(languages):
     '''
@@ -76,6 +97,19 @@ def parse_bio(row):
         cols.append(tmp_col)
     return(cols)
 
+def multithread(function, list):
+
+    futures = []
+    executor = concurrent.futures.ThreadPoolExecutor(max_workers=100)
+    for item in list:
+        futures.append(executor.submit(function, item))
+    with alive_bar(int(len(futures))) as bar:
+        for future in concurrent.futures.as_completed(futures):
+            try:
+                future.result()
+                bar()
+            except:
+                bar()
 
 def create_dataframe(languages):
     '''
@@ -158,7 +192,6 @@ if __name__ == '__main__':
     try:
         df = pd.read_csv(destination_file)
         df = df.append(create_dataframe(languages=languages),ignore_index=True)
-
     except:
         df = create_dataframe(languages=languages)
 
