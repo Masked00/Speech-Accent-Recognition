@@ -19,7 +19,7 @@ class GetAudio:
         self.url = 'http://chnm.gmu.edu/accent/soundtracks/{}.mp3'
         self.destination_folder = destination_folder
         self.wait = wait
-        self.debug = False
+        self.debug = True
 
     def check_path(self):
         '''
