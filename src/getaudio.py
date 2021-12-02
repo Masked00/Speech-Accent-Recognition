@@ -3,24 +3,6 @@ import urllib.request
 import os
 import sys
 from pydub import AudioSegment
-from colorama import init, Fore, Style
-
-os.system('cls')
-try:
-    os.chdir(os.path.dirname(__file__))
-except:
-    pass
-
-# colors
-
-init(autoreset=True)
-red = Fore.RED + Style.BRIGHT
-green = Fore.GREEN + Style.BRIGHT
-yellow = Fore.YELLOW + Style.BRIGHT
-blue = Fore.BLUE + Style.BRIGHT
-magenta = Fore.MAGENTA + Style.BRIGHT
-cyan = Fore.CYAN + Style.BRIGHT
-white = Fore.WHITE + Style.BRIGHT
 
 
 class GetAudio:
@@ -37,7 +19,7 @@ class GetAudio:
         self.url = 'http://chnm.gmu.edu/accent/soundtracks/{}.mp3'
         self.destination_folder = destination_folder
         self.wait = wait
-        self.debug = True
+        self.debug = False
 
     def check_path(self):
         '''
@@ -63,7 +45,7 @@ class GetAudio:
         for lang_num in self.audio_df['language_num']:
             if not os.path.exists(self.destination_folder + '{}.wav'.format(lang_num)):
                 if self.debug:
-                    print(f'  {white}> {magenta}downloading {white}{lang_num}')
+                    print('downloading {}'.format(lang_num))
                 (filename, headers) = urllib.request.urlretrieve(
                     self.url.format(lang_num))
                 sound = AudioSegment.from_mp3(filename)
