@@ -5,9 +5,10 @@ import sys
 from pydub import AudioSegment
 import concurrent.futures
 
+
 class GetAudio:
 
-    def __init__(self, csv_filepath, destination_folder= 'audio/', wait= 1.5, debug=False ):
+    def __init__(self, csv_filepath, destination_folder='audio/', wait=1.5, debug=False):
         '''
         Initializes GetAudio class object
         :param destination_folder (str): Folder where audio files will be saved
@@ -27,7 +28,8 @@ class GetAudio:
         '''
         if not os.path.exists(self.destination_folder):
             if self.debug:
-                print('{} does not exist, creating'.format(self.destination_folder))
+                print('{} does not exist, creating'.format(
+                    self.destination_folder))
             os.makedirs('../' + self.destination_folder)
 
     def get_audio(self):
@@ -42,15 +44,18 @@ class GetAudio:
         counter = 0
 
         for lang_num in self.audio_df['language_num']:
-            if not os.path.exists(self.destination_folder +'{}.wav'.format(lang_num)):
+            if not os.path.exists(self.destination_folder + '{}.wav'.format(lang_num)):
                 if self.debug:
                     print('downloading {}'.format(lang_num))
-                (filename, headers) = urllib.request.urlretrieve(self.url.format(lang_num))
+                (filename, headers) = urllib.request.urlretrieve(
+                    self.url.format(lang_num))
                 sound = AudioSegment.from_mp3(filename)
-                sound.export('../' + self.destination_folder + "{}.wav".format(lang_num), format="wav")
+                sound.export('../' + self.destination_folder +
+                             "{}.wav".format(lang_num), format="wav")
                 counter += 1
 
         return counter
+
 
 if __name__ == '__main__':
     '''
@@ -60,4 +65,3 @@ if __name__ == '__main__':
     csv_file = sys.argv[1]
     ga = GetAudio(csv_filepath=csv_file)
     ga.get_audio()
-
