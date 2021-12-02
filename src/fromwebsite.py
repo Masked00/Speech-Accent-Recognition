@@ -10,6 +10,10 @@ from alive_progress import alive_bar
 from colorama import init, Fore, Style
 
 os.system('cls')
+try:
+    os.chdir(os.path.dirname(__file__))
+except:
+    pass
 
 # colors
 
@@ -21,11 +25,6 @@ blue = Fore.BLUE + Style.BRIGHT
 magenta = Fore.MAGENTA + Style.BRIGHT
 cyan = Fore.CYAN + Style.BRIGHT
 white = Fore.WHITE + Style.BRIGHT
-
-try:
-    os.chdir(os.path.dirname(__file__))
-except:
-    pass
 
 ROOT_URL = 'http://accent.gmu.edu/'
 BROWSE_LANGUAGE_URL = 'browse_language.php?function=find&language={}'
