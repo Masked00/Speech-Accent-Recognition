@@ -16,6 +16,7 @@ magenta = Fore.MAGENTA + Style.BRIGHT
 cyan = Fore.CYAN + Style.BRIGHT
 white = Fore.WHITE + Style.BRIGHT
 
+
 class GetAudio:
 
     def __init__(self, csv_filepath, destination_folder='audio/', wait=0, debug=False):
@@ -38,7 +39,8 @@ class GetAudio:
         '''
         if not os.path.exists(self.destination_folder):
             if self.debug:
-                print('{} does not exist, creating'.format(self.destination_folder))
+                print('{} does not exist, creating'.format(
+                    self.destination_folder))
             os.makedirs('../' + self.destination_folder)
 
     def get_audio(self):
@@ -59,7 +61,8 @@ class GetAudio:
                 (filename, headers) = urllib.request.urlretrieve(
                     self.url.format(lang_num))
                 sound = AudioSegment.from_mp3(filename)
-                sound.export('../' + self.destination_folder + "{}.wav".format(lang_num), format="wav")
+                sound.export('../' + self.destination_folder +
+                             "{}.wav".format(lang_num), format="wav")
                 counter += 1
 
         return counter

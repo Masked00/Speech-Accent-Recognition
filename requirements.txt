@@ -8,3 +8,4 @@ keras
 librosa
 sklearn
 tensorflow
+alive_progress

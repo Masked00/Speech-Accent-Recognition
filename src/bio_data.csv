@@ -1,71 +1,71 @@
 href,language_num,sex,birth_place,native_language,other_languages,age_sex,age_of_english_onset,english_learning_method,english_residence,length_of_english_residence,age
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=255,malayalam1,male,"['state,', 'india']","malayalam
-(mal)","['hindi-urdu', '']","['24,', 'male', '']",5.0,academic,['usa'],0.7,  24
+(mal)","['hindi-urdu', '']","['24,', 'male', '']",5.0,academic,['usa'],0.7,24
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=592,malayalam2,female,"['kerala,', 'india']","malayalam
-(mal)","['hindi', 'tamil', '']","['29,', 'female', '']",5.0,academic,['usa'],4.5,  29
+(mal)","['hindi', 'tamil', '']","['29,', 'female', '']",5.0,academic,['usa'],4.5,29
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=1780,malayalam3,female,"['bangalore,', 'india']","malayalam
-(mal)","['french', 'kannada', '']","['19,', 'female', '']",3.5,naturalistic,['usa'],15.0,  19
+(mal)","['french', 'kannada', '']","['19,', 'female', '']",3.5,naturalistic,['usa'],15.0,19
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=1857,malayalam4,female,"['arab', 'emirates']","malayalam
-(mal)","['hindi', 'arabic', '']","['18,', 'female', '']",3.0,academic,[''],0.0,  18
+(mal)","['hindi', 'arabic', '']","['18,', 'female', '']",3.0,academic,[''],0.0,18
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2337,malayalam5,female,"['bangalore,', 'india']","malayalam
-(mal)","['kannada', 'tamil', 'hindi', 'bengali', '']","['18,', 'female', '']",6.0,academic,"['india,', 'usa']",18.0,  18
+(mal)","['kannada', 'tamil', 'hindi', 'bengali', '']","['18,', 'female', '']",6.0,academic,"['india,', 'usa']",18.0,18
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2578,malayalam6,male,"['kerala,', 'india']","malayalam
-(mal)","['hindi', 'kannada', 'urdu', '']","['27,', 'male', '']",10.0,naturalistic,[''],0.0,  27
+(mal)","['hindi', 'kannada', 'urdu', '']","['27,', 'male', '']",10.0,naturalistic,[''],0.0,27
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2579,malayalam7,male,"['kerala,', 'india']","malayalam
-(mal)","['hindi', 'arabic', '']","['25,', 'male', '']",11.0,academic,[''],0.0,  25
+(mal)","['hindi', 'arabic', '']","['25,', 'male', '']",11.0,academic,[''],0.0,25
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2972,malayalam8,female,"['kerala,', 'india']","malayalam
-(mal)","['hindi', 'tamil', '']","['51,', 'female', '']",3.0,academic,['usa'],21.0,  51
+(mal)","['hindi', 'tamil', '']","['51,', 'female', '']",3.0,academic,['usa'],21.0,51
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=367,tamil1,male,"['sri', 'lanka']","tamil
-(tam)","['sinhalese', 'telugu', 'malayalam', '']","['39,', 'male', '']",7.0,academic,['usa'],13.0,  39
+(tam)","['sinhalese', 'telugu', 'malayalam', '']","['39,', 'male', '']",7.0,academic,['usa'],13.0,39
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=429,tamil2,female,"['nadu,', 'india']","tamil
-(tam)","['hindi-urdu', 'kannada', 'malayalam', '']","['35,', 'female', '']",4.0,naturalistic,['usa'],5.0,  35
+(tam)","['hindi-urdu', 'kannada', 'malayalam', '']","['35,', 'female', '']",4.0,naturalistic,['usa'],5.0,35
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=531,tamil3,male,"['chennai,', 'india']","tamil
-(tam)",['none'],"['26,', 'male', '']",10.0,naturalistic,['uk'],3.0,  26
+(tam)",['none'],"['26,', 'male', '']",10.0,naturalistic,['uk'],3.0,26
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=1647,tamil4,female,"['sri', 'lanka']","tamil
-(tam)","['sinhalese', '']","['58,', 'female', '']",3.0,academic,['usa'],23.7,  58
+(tam)","['sinhalese', '']","['58,', 'female', '']",3.0,academic,['usa'],23.7,58
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=1723,tamil5,female,"['nadu,', 'india']","tamil
-(tam)","['hindi', '']","['36,', 'female', '']",5.0,academic,['usa'],12.0,  36
+(tam)","['hindi', '']","['36,', 'female', '']",5.0,academic,['usa'],12.0,36
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2076,tamil6,female,"['karnataka,', 'india']","tamil
-(tam)","['hindi', 'telugu', '']","['47,', 'female', '']",6.0,academic,['usa'],19.0,  47
+(tam)","['hindi', 'telugu', '']","['47,', 'female', '']",6.0,academic,['usa'],19.0,47
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2359,tamil7,female,"['maharashtra,', 'india']","tamil
-(tam)","['hindi', 'marathi', '']","['26,', 'female', '']",3.0,academic,['usa'],2.3,  26
+(tam)","['hindi', 'marathi', '']","['26,', 'female', '']",3.0,academic,['usa'],2.3,26
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2449,tamil8,female,"['nadu,', 'india']","tamil
-(tam)","['telugu', 'hindi', '']","['25,', 'female', '']",5.0,academic,['usa'],1.0,  25
+(tam)","['telugu', 'hindi', '']","['25,', 'female', '']",5.0,academic,['usa'],1.0,25
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2453,tamil9,female,"['chennai,', 'india']","tamil
-(tam)","['telugu', 'hindi', '']","['28,', 'female', '']",4.0,academic,['usa'],3.0,  28
+(tam)","['telugu', 'hindi', '']","['28,', 'female', '']",4.0,academic,['usa'],3.0,28
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2454,tamil10,male,"['chennai,', 'india']","tamil
-(tam)","['hindi', '']","['24,', 'male', '']",5.0,academic,['usa'],0.2,  24
+(tam)","['hindi', '']","['24,', 'male', '']",5.0,academic,['usa'],0.2,24
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2455,tamil11,female,"['pondicherry,', 'india']","tamil
-(tam)",['none'],"['23,', 'female', '']",5.0,academic,['usa'],0.2,  23
+(tam)",['none'],"['23,', 'female', '']",5.0,academic,['usa'],0.2,23
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2462,tamil12,female,"['nadu,', 'india']","tamil
-(tam)","['hindi', '']","['23,', 'female', '']",3.0,academic,['usa'],0.1,  23
+(tam)","['hindi', '']","['23,', 'female', '']",3.0,academic,['usa'],0.1,23
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2571,tamil13,female,"['nadu,', 'india']","tamil
-(tam)","['telugu', 'hindi', '']","['28,', 'female', '']",3.0,academic,['usa'],2.0,  28
+(tam)","['telugu', 'hindi', '']","['28,', 'female', '']",3.0,academic,['usa'],2.0,28
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=369,telugu1,male,"['kadapa,', 'india']","telugu
-(tel)","['hindi-urdu', 'tamil', '']","['31,', 'male', '']",6.0,academic,['usa'],4.0,  31
+(tel)","['hindi-urdu', 'tamil', '']","['31,', 'male', '']",6.0,academic,['usa'],4.0,31
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=370,telugu2,male,"['pradesh,', 'india']","telugu
-(tel)","['hindi-urdu', '']","['18,', 'male', '']",6.0,academic,['usa'],3.0,  18
+(tel)","['hindi-urdu', '']","['18,', 'male', '']",6.0,academic,['usa'],3.0,18
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2211,telugu3,male,"['karnataka,', 'india']","telugu
-(tel)","['sanskrit', '']","['25,', 'male', '']",5.0,academic,['usa'],0.1,  25
+(tel)","['sanskrit', '']","['25,', 'male', '']",5.0,academic,['usa'],0.1,25
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2213,telugu4,male,"['hyderabad,', 'india']","telugu
-(tel)","['hindi', 'marathi', '']","['22,', 'male', '']",5.0,academic,['usa'],0.1,  22
+(tel)","['hindi', 'marathi', '']","['22,', 'male', '']",5.0,academic,['usa'],0.1,22
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2228,telugu5,male,"['telangana,', 'india']","telugu
-(tel)","['hindi', '']","['21,', 'male', '']",4.0,academic,['usa'],0.1,  21
+(tel)","['hindi', '']","['21,', 'male', '']",4.0,academic,['usa'],0.1,21
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2280,telugu6,male,"['hyderabad,', 'india']","telugu
-(tel)","['hindi', '']","['23,', 'male', '']",4.0,academic,['usa'],0.8,  23
+(tel)","['hindi', '']","['23,', 'male', '']",4.0,academic,['usa'],0.8,23
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2339,telugu7,male,"['hyderabad,', 'india']","telugu
-(tel)","['hindi', '']","['23,', 'male', '']",3.0,academic,['usa'],1.3,  23
+(tel)","['hindi', '']","['23,', 'male', '']",3.0,academic,['usa'],1.3,23
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2422,telugu8,male,"['pradesh,', 'india']","telugu
-(tel)","['hindi', '']","['22,', 'male', '']",2.0,academic,['usa'],0.1,  22
+(tel)","['hindi', '']","['22,', 'male', '']",2.0,academic,['usa'],0.1,22
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2460,telugu9,male,"['pradesh,', 'india']","telugu
-(tel)","['hindi', 'malayalam', 'tamil', 'kannada', '']","['24,', 'male', '']",7.0,academic,['usa'],0.2,  24
+(tel)","['hindi', 'malayalam', 'tamil', 'kannada', '']","['24,', 'male', '']",7.0,academic,['usa'],0.2,24
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2465,telugu10,male,"['hyderabad,', 'india']","telugu
-(tel)","['hindi', '']","['21,', 'male', '']",14.0,academic,['usa'],0.2,  21
+(tel)","['hindi', '']","['21,', 'male', '']",14.0,academic,['usa'],0.2,21
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2512,telugu11,male,"['hyderabad,', 'india']","telugu
-(tel)","['hindi', 'urdu', 'spanish', '']","['26,', 'male', '']",6.0,academic,['usa'],4.0,  26
+(tel)","['hindi', 'urdu', 'spanish', '']","['26,', 'male', '']",6.0,academic,['usa'],4.0,26
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2601,telugu12,female,"['jersey,', 'usa']","telugu
-(tel)","['hindi', '']","['18,', 'female', '']",3.0,naturalistic,['usa'],18.0,  18
+(tel)","['hindi', '']","['18,', 'female', '']",3.0,naturalistic,['usa'],18.0,18
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2603,telugu13,male,"['hyderabad,', 'india']","telugu
-(tel)","['hindi', '']","['25,', 'male', '']",5.0,academic,['usa'],4.0,  25
+(tel)","['hindi', '']","['25,', 'male', '']",5.0,academic,['usa'],4.0,25
 http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2848,telugu14,female,"['tenali,', 'india']","telugu
-(tel)","['hindi', '']","['19,', 'female', '']",17.0,academic,['usa'],2.0,  19
+(tel)","['hindi', '']","['19,', 'female', '']",17.0,academic,['usa'],2.0,19
