@@ -3,3 +3,7 @@ pandas
 bs4
 colorama
 pydub
+numpy
+keras
+librosa
+sklearn

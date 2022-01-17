@@ -24,6 +24,7 @@ def predict_prob_class_audio(MFCCs, model):
     '''
     MFCCs = MFCCs.reshape(MFCCs.shape[0], MFCCs.shape[1], MFCCs.shape[2], 1)
     y_predicted = model.predict_proba(MFCCs, verbose=0)
+    print("->>>", y_predicted)
     return(np.argmax(np.sum(y_predicted, axis=0)))
 
 
@@ -37,6 +38,7 @@ def predict_class_all(X_train, model):
     for mfcc in X_train:
         predictions.append(predict_class_audio(mfcc, model))
         # predictions.append(predict_prob_class_audio(mfcc, model))
+    print(predictions)
     return predictions
 
 
