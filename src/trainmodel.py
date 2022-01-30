@@ -1,3 +1,5 @@
+from tensorflow.compat.v1 import InteractiveSession
+from tensorflow.compat.v1 import ConfigProto
 import keras
 from keras.callbacks import EarlyStopping, TensorBoard
 from keras.preprocessing.image import ImageDataGenerator
@@ -16,6 +18,15 @@ import pandas as pd
 from collections import Counter
 import sys
 sys.path.append('../speech-accent-recognition/src>')
+
+
+def fix_gpu():
+    config = ConfigProto()
+    config.gpu_options.allow_growth = True
+    session = InteractiveSession(config=config)
+
+
+fix_gpu()
 
 
 DEBUG = True
@@ -167,7 +178,7 @@ def train_model(X_train, y_train, X_validation, y_validation, batch_size=128):  
     model.add(Dropout(0.5))
 
     model.add(Dense(num_classes, activation='softmax'))
-    model.compile(loss='categorical_crossentropy',
+    model.compile(loss='sparse_categorical_crossentropy',
                   optimizer='adadelta',
                   metrics=['accuracy'])
 
