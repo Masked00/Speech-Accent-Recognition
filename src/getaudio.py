@@ -5,8 +5,6 @@ import sys
 from pydub import AudioSegment
 from colorama import init, Fore, Style
 
-# colors
-
 init(autoreset=True)
 red = Fore.RED + Style.BRIGHT
 green = Fore.GREEN + Style.BRIGHT
@@ -20,12 +18,7 @@ white = Fore.WHITE + Style.BRIGHT
 class GetAudio:
 
     def __init__(self, csv_filepath, destination_folder='audio/', wait=0, debug=False):
-        '''
-        Initializes GetAudio class object
-        :param destination_folder (str): Folder where audio files will be saved
-        :param wait (float): Length (in seconds) between web requests
-        :param debug (bool): Outputs status indicators to console when True
-        '''
+       
         self.csv_filepath = csv_filepath
         self.audio_df = pd.read_csv(csv_filepath)
         self.url = 'http://chnm.gmu.edu/accent/soundtracks/{}.mp3'
@@ -34,9 +27,7 @@ class GetAudio:
         self.debug = True
 
     def check_path(self):
-        '''
-        Checks if self.distination_folder exists. If not, a folder called self.destination_folder is created
-        '''
+       
         if not os.path.exists(self.destination_folder):
             if self.debug:
                 print('{} does not exist, creating'.format(
@@ -44,11 +35,7 @@ class GetAudio:
             os.makedirs('../' + self.destination_folder)
 
     def get_audio(self):
-        '''
-        Retrieves all audio files from 'language_num' column of self.audio_df
-        If audio file already exists, move on to the next
-        :return (int): Number of audio files downloaded
-        '''
+        
 
         self.check_path()
 
@@ -69,10 +56,7 @@ class GetAudio:
 
 
 if __name__ == '__main__':
-    '''
-    Example console command
-    python GetAudio.py audio_metadata.csv
-    '''
+    
     csv_file = sys.argv[1]
     ga = GetAudio(csv_filepath=csv_file)
     ga.get_audio()
