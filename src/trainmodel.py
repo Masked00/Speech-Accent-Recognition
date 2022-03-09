@@ -176,7 +176,7 @@ if __name__ == '__main__':
 
     print("Entering main")
 
-    acc_to_beat = test_count.most_common(
+    acctobeat = test_count.most_common(
         1)[0][1] / float(np.sum(list(test_count.values())))
 
     y_train = to_categorical(y_train)
@@ -205,7 +205,7 @@ if __name__ == '__main__':
         create_segmented_mfccs(X_test), model)
     print('Training samples:', train_count)
     print('Testing samples:', test_count)
-    print('Accuracy to beat:', acc_to_beat)
+    print('Accuracy to beat:', acctobeat)
     print('Confusion matrix of total samples:\n', np.sum(
         accuracy.confusion_matrix(y_predicted, y_test), axis=1))
     print('Confusion matrix:\n', accuracy.confusion_matrix(y_predicted, y_test))
